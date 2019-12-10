@@ -72,11 +72,11 @@ class MonotoneX {
     }
     if (reversed) {
       arr.reversed.forEach((f){
-        _point(path, f[2], f[3], f[0], f[1], f[5], f[4]);
+        _point(path, f[2] ?? 0, f[3] ?? 0, f[0] ?? 0, f[1] ?? 0, f[5] ?? 0, f[4] ?? 0);
       });
     } else {
       arr.forEach((f){
-        _point(path, f[0], f[1], f[2], f[3], f[4], f[5]);
+        _point(path, f[0] ?? 0, f[1] ?? 0, f[2] ?? 0, f[3] ?? 0, f[4] ?? 0, f[5] ?? 0);
       });
     }
     return path;
